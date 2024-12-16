@@ -1,0 +1,15 @@
+workflows:
+  ios-build:
+    name: iOS Workflow
+    environment:
+      flutter: "3.19.6" # Specify your desired Flutter version
+      xcode: latest # Use the latest Xcode version
+    scripts:
+      - name: Install dependencies
+        script: flutter pub get
+      - name: Clean build folder
+        script: flutter clean
+      - name: Build iOS
+        script: flutter build ipa --release
+    artifacts:
+      - build/ios/ipa/*.ipa # Save the .ipa file as an artifact

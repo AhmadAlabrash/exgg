@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-String siteLink = 'https://xgig.xyz';
+String siteLink = 'https://xilancer.xgenious.com';
 
 String appLabel = 'xgig';
 String storeLabel = "xgig";
